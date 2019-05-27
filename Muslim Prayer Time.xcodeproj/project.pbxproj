@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43F3E8EA1284C30F9D40B0F0 /* Pods_Muslim_Prayer_Time.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B194CC60D3112F7D96F1064 /* Pods_Muslim_Prayer_Time.framework */; };
+		970FAB712277F528005CA0EB /* PrayerTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970FAB702277F528005CA0EB /* PrayerTimeModel.swift */; };
+		972DB9102277F0D10033F677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972DB90F2277F0D10033F677 /* AppDelegate.swift */; };
+		972DB9122277F0D10033F677 /* PrayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972DB9112277F0D10033F677 /* PrayerController.swift */; };
+		972DB9152277F0D10033F677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972DB9132277F0D10033F677 /* Main.storyboard */; };
+		972DB9172277F0D30033F677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972DB9162277F0D30033F677 /* Assets.xcassets */; };
+		972DB91A2277F0D30033F677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972DB9182277F0D30033F677 /* LaunchScreen.storyboard */; };
+		976DD967227845B60041F2C1 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976DD966227845B60041F2C1 /* MainController.swift */; };
+		976DD9692278461C0041F2C1 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976DD9682278461C0041F2C1 /* AboutController.swift */; };
+		976DD96C227848140041F2C1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976DD96B227848140041F2C1 /* GradientView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B194CC60D3112F7D96F1064 /* Pods_Muslim_Prayer_Time.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Muslim_Prayer_Time.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18296CEB34166D0541F62892 /* Pods-Muslim Prayer Time.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Muslim Prayer Time.debug.xcconfig"; path = "Target Support Files/Pods-Muslim Prayer Time/Pods-Muslim Prayer Time.debug.xcconfig"; sourceTree = "<group>"; };
+		970FAB702277F528005CA0EB /* PrayerTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeModel.swift; sourceTree = "<group>"; };
+		972DB90C2277F0D10033F677 /* Muslim Prayer Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Muslim Prayer Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		972DB90F2277F0D10033F677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		972DB9112277F0D10033F677 /* PrayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerController.swift; sourceTree = "<group>"; };
+		972DB9142277F0D10033F677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		972DB9162277F0D30033F677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		972DB9192277F0D30033F677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		972DB91B2277F0D30033F677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		976DD966227845B60041F2C1 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		976DD9682278461C0041F2C1 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
+		976DD96B227848140041F2C1 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		BFA215F78C5602256D779E22 /* Pods-Muslim Prayer Time.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Muslim Prayer Time.release.xcconfig"; path = "Target Support Files/Pods-Muslim Prayer Time/Pods-Muslim Prayer Time.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		972DB9092277F0D10033F677 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F3E8EA1284C30F9D40B0F0 /* Pods_Muslim_Prayer_Time.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83D2515794F2FCE0E656FE98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B194CC60D3112F7D96F1064 /* Pods_Muslim_Prayer_Time.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		970FAB6C2277F4CE005CA0EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				970FAB702277F528005CA0EB /* PrayerTimeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		970FAB6D2277F4DD005CA0EB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				976DD965227845980041F2C1 /* Main */,
+				970FAB6F2277F4FB005CA0EB /* About */,
+				970FAB6E2277F4EA005CA0EB /* Prayer */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		970FAB6E2277F4EA005CA0EB /* Prayer */ = {
+			isa = PBXGroup;
+			children = (
+				972DB9112277F0D10033F677 /* PrayerController.swift */,
+			);
+			path = Prayer;
+			sourceTree = "<group>";
+		};
+		970FAB6F2277F4FB005CA0EB /* About */ = {
+			isa = PBXGroup;
+			children = (
+				976DD9682278461C0041F2C1 /* AboutController.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		972DB9032277F0D10033F677 = {
+			isa = PBXGroup;
+			children = (
+				972DB90E2277F0D10033F677 /* Muslim Prayer Time */,
+				972DB90D2277F0D10033F677 /* Products */,
+				CDEA2EAD4C48659E5E5C5868 /* Pods */,
+				83D2515794F2FCE0E656FE98 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		972DB90D2277F0D10033F677 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				972DB90C2277F0D10033F677 /* Muslim Prayer Time.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		972DB90E2277F0D10033F677 /* Muslim Prayer Time */ = {
+			isa = PBXGroup;
+			children = (
+				970FAB6C2277F4CE005CA0EB /* Model */,
+				970FAB6D2277F4DD005CA0EB /* ViewController */,
+				976DD96A227847F90041F2C1 /* Utils */,
+				972DB90F2277F0D10033F677 /* AppDelegate.swift */,
+				972DB9132277F0D10033F677 /* Main.storyboard */,
+				972DB9162277F0D30033F677 /* Assets.xcassets */,
+				972DB9182277F0D30033F677 /* LaunchScreen.storyboard */,
+				972DB91B2277F0D30033F677 /* Info.plist */,
+			);
+			path = "Muslim Prayer Time";
+			sourceTree = "<group>";
+		};
+		976DD965227845980041F2C1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				976DD966227845B60041F2C1 /* MainController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		976DD96A227847F90041F2C1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				976DD96B227848140041F2C1 /* GradientView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CDEA2EAD4C48659E5E5C5868 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18296CEB34166D0541F62892 /* Pods-Muslim Prayer Time.debug.xcconfig */,
+				BFA215F78C5602256D779E22 /* Pods-Muslim Prayer Time.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		972DB90B2277F0D10033F677 /* Muslim Prayer Time */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 972DB91E2277F0D30033F677 /* Build configuration list for PBXNativeTarget "Muslim Prayer Time" */;
+			buildPhases = (
+				229A03FAE18C99DA8A1D675A /* [CP] Check Pods Manifest.lock */,
+				972DB9082277F0D10033F677 /* Sources */,
+				972DB9092277F0D10033F677 /* Frameworks */,
+				972DB90A2277F0D10033F677 /* Resources */,
+				0CCF65075204A14D78DA42A2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Muslim Prayer Time";
+			productName = "Muslim Prayer Time";
+			productReference = 972DB90C2277F0D10033F677 /* Muslim Prayer Time.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		972DB9042277F0D10033F677 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Erthru;
+				TargetAttributes = {
+					972DB90B2277F0D10033F677 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 972DB9072277F0D10033F677 /* Build configuration list for PBXProject "Muslim Prayer Time" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 972DB9032277F0D10033F677;
+			productRefGroup = 972DB90D2277F0D10033F677 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				972DB90B2277F0D10033F677 /* Muslim Prayer Time */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		972DB90A2277F0D10033F677 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				972DB91A2277F0D30033F677 /* LaunchScreen.storyboard in Resources */,
+				972DB9172277F0D30033F677 /* Assets.xcassets in Resources */,
+				972DB9152277F0D10033F677 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CCF65075204A14D78DA42A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Muslim Prayer Time/Pods-Muslim Prayer Time-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Muslim Prayer Time/Pods-Muslim Prayer Time-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		229A03FAE18C99DA8A1D675A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Muslim Prayer Time-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		972DB9082277F0D10033F677 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				976DD967227845B60041F2C1 /* MainController.swift in Sources */,
+				976DD9692278461C0041F2C1 /* AboutController.swift in Sources */,
+				976DD96C227848140041F2C1 /* GradientView.swift in Sources */,
+				972DB9122277F0D10033F677 /* PrayerController.swift in Sources */,
+				970FAB712277F528005CA0EB /* PrayerTimeModel.swift in Sources */,
+				972DB9102277F0D10033F677 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		972DB9132277F0D10033F677 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				972DB9142277F0D10033F677 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		972DB9182277F0D30033F677 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				972DB9192277F0D30033F677 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		972DB91C2277F0D30033F677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		972DB91D2277F0D30033F677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		972DB91F2277F0D30033F677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18296CEB34166D0541F62892 /* Pods-Muslim Prayer Time.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83JMC98N76;
+				INFOPLIST_FILE = "Muslim Prayer Time/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.erthru.Muslim-Prayer-Time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		972DB9202277F0D30033F677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFA215F78C5602256D779E22 /* Pods-Muslim Prayer Time.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83JMC98N76;
+				INFOPLIST_FILE = "Muslim Prayer Time/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.erthru.Muslim-Prayer-Time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		972DB9072277F0D10033F677 /* Build configuration list for PBXProject "Muslim Prayer Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				972DB91C2277F0D30033F677 /* Debug */,
+				972DB91D2277F0D30033F677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		972DB91E2277F0D30033F677 /* Build configuration list for PBXNativeTarget "Muslim Prayer Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				972DB91F2277F0D30033F677 /* Debug */,
+				972DB9202277F0D30033F677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 972DB9042277F0D10033F677 /* Project object */;
+}
