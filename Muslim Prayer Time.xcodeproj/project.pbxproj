@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		43F3E8EA1284C30F9D40B0F0 /* Pods_Muslim_Prayer_Time.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B194CC60D3112F7D96F1064 /* Pods_Muslim_Prayer_Time.framework */; };
-		970FAB712277F528005CA0EB /* PrayerTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970FAB702277F528005CA0EB /* PrayerTimeModel.swift */; };
+		970FAB712277F528005CA0EB /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970FAB702277F528005CA0EB /* Api.swift */; };
+		9715EE5B22B53F6400763603 /* PrayerTimeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9715EE5A22B53F6400763603 /* PrayerTimeResponse.swift */; };
+		9715EE6022B54ED600763603 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9715EE5F22B54ED600763603 /* Item.swift */; };
 		972DB9102277F0D10033F677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972DB90F2277F0D10033F677 /* AppDelegate.swift */; };
 		972DB9122277F0D10033F677 /* PrayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972DB9112277F0D10033F677 /* PrayerController.swift */; };
 		972DB9152277F0D10033F677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972DB9132277F0D10033F677 /* Main.storyboard */; };
@@ -22,7 +24,9 @@
 /* Begin PBXFileReference section */
 		0B194CC60D3112F7D96F1064 /* Pods_Muslim_Prayer_Time.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Muslim_Prayer_Time.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18296CEB34166D0541F62892 /* Pods-Muslim Prayer Time.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Muslim Prayer Time.debug.xcconfig"; path = "Target Support Files/Pods-Muslim Prayer Time/Pods-Muslim Prayer Time.debug.xcconfig"; sourceTree = "<group>"; };
-		970FAB702277F528005CA0EB /* PrayerTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeModel.swift; sourceTree = "<group>"; };
+		970FAB702277F528005CA0EB /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		9715EE5A22B53F6400763603 /* PrayerTimeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeResponse.swift; sourceTree = "<group>"; };
+		9715EE5F22B54ED600763603 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		972DB90C2277F0D10033F677 /* Muslim Prayer Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Muslim Prayer Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		972DB90F2277F0D10033F677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		972DB9112277F0D10033F677 /* PrayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerController.swift; sourceTree = "<group>"; };
@@ -59,7 +63,8 @@
 		970FAB6C2277F4CE005CA0EB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				970FAB702277F528005CA0EB /* PrayerTimeModel.swift */,
+				9715EE5A22B53F6400763603 /* PrayerTimeResponse.swift */,
+				9715EE5F22B54ED600763603 /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,6 +95,14 @@
 			path = About;
 			sourceTree = "<group>";
 		};
+		9715EE5C22B5409B00763603 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				970FAB702277F528005CA0EB /* Api.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		972DB9032277F0D10033F677 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +124,7 @@
 		972DB90E2277F0D10033F677 /* Muslim Prayer Time */ = {
 			isa = PBXGroup;
 			children = (
+				9715EE5C22B5409B00763603 /* Services */,
 				970FAB6C2277F4CE005CA0EB /* Model */,
 				970FAB6D2277F4DD005CA0EB /* ViewController */,
 				976DD96A227847F90041F2C1 /* Utils */,
@@ -159,7 +173,7 @@
 				972DB9082277F0D10033F677 /* Sources */,
 				972DB9092277F0D10033F677 /* Frameworks */,
 				972DB90A2277F0D10033F677 /* Resources */,
-				0CCF65075204A14D78DA42A2 /* [CP] Embed Pods Frameworks */,
+				714144861A5EC0E86D9A5396 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,30 +231,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0CCF65075204A14D78DA42A2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Muslim Prayer Time/Pods-Muslim Prayer Time-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Muslim Prayer Time/Pods-Muslim Prayer Time-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		229A03FAE18C99DA8A1D675A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +253,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		714144861A5EC0E86D9A5396 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Muslim Prayer Time/Pods-Muslim Prayer Time-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Muslim Prayer Time/Pods-Muslim Prayer Time-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -272,9 +284,11 @@
 			files = (
 				976DD967227845B60041F2C1 /* MainController.swift in Sources */,
 				976DD9692278461C0041F2C1 /* AboutController.swift in Sources */,
+				9715EE5B22B53F6400763603 /* PrayerTimeResponse.swift in Sources */,
 				976DD96C227848140041F2C1 /* GradientView.swift in Sources */,
+				9715EE6022B54ED600763603 /* Item.swift in Sources */,
 				972DB9122277F0D10033F677 /* PrayerController.swift in Sources */,
-				970FAB712277F528005CA0EB /* PrayerTimeModel.swift in Sources */,
+				970FAB712277F528005CA0EB /* Api.swift in Sources */,
 				972DB9102277F0D10033F677 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

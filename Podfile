@@ -6,7 +6,6 @@ target 'Muslim Prayer Time' do
   use_frameworks!
 
   # Pods for Muslim Prayer Time
-  pod 'SwiftyJSON', '~> 4.0'
   pod 'Alamofire', '~> 5.0.0-beta.5'
 
 end

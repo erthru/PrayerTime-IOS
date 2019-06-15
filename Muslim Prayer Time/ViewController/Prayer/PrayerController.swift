@@ -31,40 +31,29 @@ class PrayerController: UIViewController {
         
         loading.isHidden = false
         
-        PrayerTimeModel.prepare.fetchAllJsonFromApi(completionHandler: {json,error in
-            if error{
-                
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd-MM-yyyy"
+        
+        Api.prepare.fetchAllJsonFromApi(completionHandler: {response,error in
+            if !error{
+                self.loading.isHidden = true
+                self.lbCity.text = response?.city
+                self.lbDate.text = formatter.string(from: Date())
+                self.lbShuuroq.text = "SHUROOQ: \(response?.items[0].shurooq ?? "")"
+                self.lbFajr.text = "FAJR: \(response?.items[0].fajr ?? "")"
+                self.lbDhuhr.text = "DHUHR: \(response?.items[0].dhuhr ?? "")"
+                self.lbAsr.text = "ASR: \(response?.items[0].asr ?? "")"
+                self.lbMagrib.text = "MAGHRIB: \(response?.items[0].maghrib ?? "")"
+                self.lbIsha.text = "ISHA: \(response?.items[0].isha ?? "")"
+            }else{
                 self.loading.isHidden = true
                 
                 let alert = UIAlertController(title: "ERROR", message: "Connection Failed", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
                 self.present(alert, animated: true)
-            }else{
-                
-                self.loading.isHidden = true
-                
-                let city = json["city"].string!
-                let fajr = json["items"][0]["fajr"].string!
-                let shurooq = json["items"][0]["shurooq"].string!
-                let dhuhr = json["items"][0]["dhuhr"].string!
-                let asr = json["items"][0]["asr"].string!
-                let maghrib = json["items"][0]["maghrib"].string!
-                let isha = json["items"][0]["isha"].string!
-                
-                let formatter = DateFormatter()
-                formatter.dateFormat = "dd-MM-yyyy"
-                
-                self.lbCity.text = city
-                self.lbDate.text = formatter.string(from: Date())
-                self.lbFajr.text = "Fajr: \(fajr)"
-                self.lbShuuroq.text = "Shuuroq: \(shurooq)"
-                self.lbDhuhr.text = "Dhuhr: \(dhuhr)"
-                self.lbAsr.text = "Asr: \(asr)"
-                self.lbMagrib.text = "Maghrib: \(maghrib)"
-                self.lbIsha.text = "Isha: \(isha)"
-                
             }
         })
+        
     }
 
 }
